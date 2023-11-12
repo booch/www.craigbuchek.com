@@ -2,3 +2,6 @@ baseURL = 'https://www.craigbuchek.com/'
 languageCode = 'en-us'
 title = 'Craig Buchek'
 theme = 'personal-web'
+
+[params.intro]
+main = "Hi, I'm Craig Buchek"
