@@ -1,0 +1,50 @@
+name: Install Hugo
+
+# TODO:
+#   Tell user what to do next.
+#   Determine the latest Hugo version.
+#   Change baseURL in config file to "https://$(cat CNAME)/", if it exists.
+#   Allow setting languageCode to something other than 'en-us'.
+#   Allow setting title to something other than 'My New Hugo Site'.
+
+on:
+  # Run manually from the Actions tab.
+  workflow_dispatch:
+
+# Set permissions of the GITHUB_TOKEN to allow pushing.
+permissions:
+  contents: write
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: "0.120.4"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+      - name: Make sure we don't already have a Hugo config
+        run: |
+          [[ ! -f hugo.toml && ! -f hugo.yaml && ! -f hugo.json && ! -d config ]]
+      - name: Install Hugo CLI
+        run: |
+          HUGO_DEB_URL="https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb"
+          wget -O "${{ runner.temp }}/hugo.deb" "$HUGO_DEB_URL"
+          sudo dpkg -i "${{ runner.temp }}/hugo.deb"
+      - name: Initalize Hugo
+        run: |
+          hugo new site . --force
+      - name: Make sure any new empty directories get committed
+        run: |
+          find . -type d -empty -not -regex '.*/\.git/.*' -exec touch '{}/.gitkeep' ';'
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: Add Hugo
