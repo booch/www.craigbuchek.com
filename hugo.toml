@@ -2,6 +2,14 @@ baseURL = 'https://www.craigbuchek.com/'
 languageCode = 'en-us'
 title = 'Craig Buchek'
 theme = 'personal-web'
+copyright = "© Craig Buchek"
+googleAnalytics = ""
+enableEmoji = true
 
 [params.intro]
-main = "Hi, I'm Craig Buchek"
+main = "Craig Buchek"
+sub = "Welcome to my web site"
+
+[params.sidebar]
+logo = "images/craigbuchek-southpark.png"
+
