@@ -20,8 +20,9 @@ Rails extends that to building web apps.
 - HTTP workshop
 - Booleans
 
+<!--
 ## Open Source
-
+ -->
 
 
 ## Long Beach
@@ -30,6 +31,8 @@ My wife and I moved to Long Beach in 2020.
 Our primary reason for moving was to have a more active lifestyle.
 The weather here is great; we're outdoors all the time.
 Several times a week, I walk to outdoor yoga on a bluff overlooking the ocean.
+
+![View of the ocean from a park with grass](/images/long-beach-bluff-view.jpeg "My view from yoga on the bluff in Long Beach")
 
 ## St. Louis
 
@@ -44,6 +47,8 @@ I've been involved in a lot of tech groups in St. Louis:
 - [STLLUG (Linux)](http://stllinux.org/)
 - [SLUUG (UNIX)](http://sluug.org/)
 - STL Elm
+
+![St Louis Gateway Arch and skyline, with Mississippi River in the foreground and sunset in the background](/images/stl-arch.jpeg "St Louis Gateway Arch and skyline")
 
 ## Hobbies
 

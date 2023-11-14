@@ -1,7 +1,7 @@
 baseURL = 'https://www.craigbuchek.com/'
 languageCode = 'en-us'
 title = 'Craig Buchek'
-theme = 'personal-web'
+theme = 'craigbuchek.com'
 copyright = "© Craig Buchek"
 googleAnalytics = ""
 enableEmoji = true
@@ -11,5 +11,13 @@ main = "Craig Buchek"
 sub = "Welcome to my web site"
 
 [params.sidebar]
-logo = "images/craigbuchek-southpark.png"
+logo = "/images/booch-avatar-transparent.png"
+backgroundImage = "/images/sky-blue-multi-gradient.jpg"
+gradientOverlay = 'rgba(124,148,206,0.8) 1%, rgba(130,185,202,1) 35%, rgba(104,146,186,1) 100%'
+
+[params.assets]
+favicon = ""
+customCSS = ""
+
+[params.social]
 
