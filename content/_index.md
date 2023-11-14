@@ -41,12 +41,12 @@ I still have a lot of friends and family there, and visit frequently.
 
 I've been involved in a lot of tech groups in St. Louis:
 
-- STL Ruby
+- [STL Ruby](https://www.meetup.com/stlruby/)
 - [STL Tech Slack](https://stltech.org/)
-- STL Polyglots
+- [STL Polyglots](https://www.meetup.com/stl-polyglots/)
 - [STLLUG (Linux)](http://stllinux.org/)
 - [SLUUG (UNIX)](http://sluug.org/)
-- STL Elm
+- [STL Elm](https://www.meetup.com/stlelm/)
 
 ![St Louis Gateway Arch and skyline, with Mississippi River in the foreground and sunset in the background](/images/stl-arch.jpeg "St Louis Gateway Arch and skyline")
 
