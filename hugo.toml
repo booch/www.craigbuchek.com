@@ -1,10 +1,12 @@
 baseURL = 'https://www.craigbuchek.com/'
 languageCode = 'en-us'
 title = 'Craig Buchek'
+author = 'Craig Buchek'
 theme = 'craigbuchek.com'
 copyright = "© Craig Buchek"
 googleAnalytics = ""
 enableEmoji = true
+canonifyurls = true
 
 [params.intro]
 main = "Craig Buchek"
@@ -18,6 +20,3 @@ gradientOverlay = 'rgba(124,148,206,0.8) 1%, rgba(130,185,202,1) 35%, rgba(104,1
 [params.assets]
 favicon = ""
 customCSS = ""
-
-[params.social]
-
