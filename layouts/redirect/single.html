@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta http-equiv="refresh" content="0; url={{ .Params.target }}">
+        <meta name="robots" content="noindex">
+
+        <title>Redirecting...</title>
+        <link rel="canonical" href="{{ .Params.target }}">
+
+        <script type="text/javascript">
+            setTimeout(function () { window.location.replace("{{ .Params.target }}"); }, 1);
+        </script>
+    </head>
+
+    <body>
+        <h3>Redirecting...</h3>
+        <p>
+            You should be redirected to <a href="{{ .Params.target }}">the page</a> momentarily.
+        </p>
+    </body>
+</html>
