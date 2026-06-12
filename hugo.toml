@@ -1,5 +1,5 @@
 baseURL = 'https://www.craigbuchek.com/'
-languageCode = 'en-us'
+locale = 'en-us'
 title = 'Craig Buchek'
 author = 'Craig Buchek'
 theme = 'craigbuchek.com'
@@ -7,6 +7,11 @@ copyright = "© Craig Buchek"
 googleAnalytics = ""
 enableEmoji = true
 canonifyurls = true
+
+# Allow raw HTML in content and HTML-emitting shortcodes (e.g. tweet embeds).
+# Safe here because the site is single-author; all content is trusted.
+[markup.goldmark.renderer]
+unsafe = true
 
 [params.intro]
 main = "Craig Buchek"
